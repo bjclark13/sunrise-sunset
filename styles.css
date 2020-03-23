@@ -5,7 +5,6 @@
 
 .sky, .ground {
     width: 100%;
-    position: relative;
 }
 .sky {
     background-color: skyblue;
@@ -27,15 +26,9 @@
 }
 
 .sun {
-    position: absolute;
-    bottom: 0;
     width: 100px;
     height: 100px;
     background-color: yellow;
-    border-radius: 50%;
-    left: 50%;
-    transform: translate(-50%, 100px);
-    transition: bottom 5s;
 }
 
 body {

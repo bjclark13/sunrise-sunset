@@ -36,22 +36,22 @@
             document.querySelector('.scene').classList.remove('dark');
         }
     }
-   // setHeightOfSun(sunrise, sunset, currentTime);
+    setHeightOfSun(sunrise, sunset, currentTime);
 
     // Grand Rapids, MI
-    const lat = 42.9634;
-    const long = -85.6681;
-    const sunriseURL = `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${long}&formatted=0`;
-    fetch(sunriseURL)
-    .then( (response) => {
-        response.json()
-        .then( data => {
-            const sunrise = new Date(data.results.sunrise).getTime();
-            const sunset = new Date(data.results.sunset).getTime();
+    // const lat = 42.9634;
+    // const long = -85.6681;
+    // const sunriseURL = `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${long}&formatted=0`;
+    // fetch(sunriseURL)
+    // .then( (response) => {
+    //     response.json()
+    //     .then( data => {
+    //         const sunrise = new Date(data.results.sunrise).getTime();
+    //         const sunset = new Date(data.results.sunset).getTime();
 
-            setHeightOfSun(sunrise, sunset, currentTime);
-        });
-    })
+    //         setHeightOfSun(sunrise, sunset, currentTime);
+    //     });
+    // })
 }
 
 
